@@ -1,0 +1,9 @@
+{
+  "name": "ember-autofill-fix",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "component-hooks": "0.1.9"
+  }
+}
