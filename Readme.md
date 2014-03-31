@@ -1,11 +1,9 @@
 
-![](https://dl.dropbox.com/u/30162278/ember-thumb.png) 
-
 Install
 ---
 
 ```
-component install kelonye/ember-thumb
+component install kelonye/ember-autofill-fix
 ```
 
 Usage
