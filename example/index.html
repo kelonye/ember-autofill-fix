@@ -1,31 +1,17 @@
 <body>
   <section></section>
   <script type='text/x-handlebars'>
-    <form {{action 'save' on='submit'}}>
-    {{input type='email' value=name}}
-    </form>
+    {{view App.EmailTextField type='email' value=name}}
   </script>
   <script src='../public/public.js'></script>
   <script>
     var autofill = require('ember-autofill-fix');
     App = Em.Application.create();
-    App.Person = Em.Object.extend({
-      emailDidChange: function(){
-        console.log(this.get('email'));
-      }.observes('email')
-    });
     App.ApplicationRoute = Em.Route.extend({
       model: function(){
-        return App.Person.create({
-          email: '1@1.com'
-        });
-      },
-      actions: {
-        save: function(){
-          console.log('saved!');
-        }
+        return Em.Object.create();
       }
     });
-    App.ApplicationView = Ember.View.extend(autofill);
+    App.EmailTextField = Em.TextField.extend(autofill);
   </script>
 </body>

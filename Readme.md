@@ -12,7 +12,7 @@ Usage
 ```javascript
 
 var autofill = require('ember-autofill-fix');
-App.ApplicationView = Ember.View.extend(autofill);
+App.MyTextField = Em.TextField.extend(autofill);
 
 ```
 
