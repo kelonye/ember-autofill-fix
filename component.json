@@ -1,6 +1,6 @@
 {
   "name": "ember-autofill-fix",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "description": "Fix input binding bug caused by browser autofill fix values not being bound",
   "dependencies": {
