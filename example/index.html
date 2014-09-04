@@ -9,7 +9,9 @@
     App = Em.Application.create();
     App.ApplicationRoute = Em.Route.extend({
       model: function(){
-        return Em.Object.create();
+        return Em.Object.create({
+          name: 'Uber'
+        });
       }
     });
     App.EmailTextField = Em.TextField.extend(autofill);
